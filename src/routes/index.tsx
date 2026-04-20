@@ -1,26 +1,53 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Navbar } from "@/components/Navbar";
+import { Hero } from "@/components/Hero";
+import { About } from "@/components/About";
+import { Experience } from "@/components/Experience";
+import { Skills } from "@/components/Skills";
+import { Certifications } from "@/components/Certifications";
+import { Projects } from "@/components/Projects";
+import { Resume } from "@/components/Resume";
+import { Contact } from "@/components/Contact";
+import { Footer } from "@/components/Footer";
+import { useRevealOnScroll } from "@/hooks/use-reveal";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Sreeram G Ramesh — Cybersecurity Analyst & SOC Operator" },
+      {
+        name: "description",
+        content:
+          "Cybersecurity graduate student at UT Dallas. SOC operations, vulnerability management, network security, and incident response. Open to full-time roles.",
+      },
+      { property: "og:title", content: "Sreeram G Ramesh — Cybersecurity Portfolio" },
+      {
+        property: "og:description",
+        content:
+          "Defending systems, investigating threats, and strengthening cyber resilience.",
+      },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
+function Index() {
+  const ref = useRevealOnScroll<HTMLDivElement>();
+
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div ref={ref} className="min-h-screen text-foreground">
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Experience />
+        <Skills />
+        <Certifications />
+        <Projects />
+        <Resume />
+        <Contact />
+      </main>
+      <Footer />
     </div>
   );
-}
-
-function Index() {
-  return <PlaceholderIndex />;
 }
