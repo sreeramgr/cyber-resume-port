@@ -6,7 +6,6 @@ const ROLES = [
     company: "The University of Texas at Dallas",
     role: "Student Employee · Network Technician",
     period: "Current",
-    location: "Richardson, TX",
     bullets: [
       "Support campus wired and Wi-Fi operations across UTD MIST infrastructure.",
       "Troubleshoot access points and resolve connectivity tickets in Team Dynamix.",
@@ -19,7 +18,6 @@ const ROLES = [
     company: "Tavant Technologies",
     role: "Cybersecurity Intern",
     period: "Internship",
-    location: "Bengaluru, IN",
     bullets: [
       "Supported Qualys VMDR vulnerability assessments — onboarded assets, scheduled scans, reviewed findings.",
       "Correlated findings across SIEM platforms to improve remediation context.",
@@ -32,7 +30,6 @@ const ROLES = [
     company: "NTT DATA",
     role: "Associate Information Security Analyst",
     period: "Full-time",
-    location: "SOC · MDR",
     bullets: [
       "Performed initial triage and validation of security alerts in MDR workflows.",
       "Reduced false positives by ~35–40% through tuning and correlation review.",
@@ -75,9 +72,8 @@ export function Experience() {
                         {r.role}
                       </h3>
                     </div>
-                    <div className="text-right font-mono text-xs text-muted-foreground">
+                    <div className="text-right font-mono text-xs text-neon">
                       <div>{r.period}</div>
-                      <div className="text-neon">{r.location}</div>
                     </div>
                   </div>
 
