@@ -1,4 +1,5 @@
-import { ArrowRight, Download, Linkedin, MapPin, Terminal } from "lucide-react";
+import { ArrowRight, Download, MapPin, Terminal } from "lucide-react";
+import { LinkedinIcon } from "./icons/LinkedinIcon";
 import { CyberCanvas } from "./CyberCanvas";
 import { RotatingText } from "./RotatingText";
 import { ThreatFeed } from "./ThreatFeed";
@@ -66,7 +67,7 @@ export function Hero() {
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-md border border-border px-5 py-3 font-mono text-sm uppercase tracking-wider text-muted-foreground hover:text-foreground hover:border-foreground/40 transition"
             >
-              <Linkedin className="h-4 w-4" /> LinkedIn
+              <LinkedinIcon className="h-4 w-4" /> LinkedIn
             </a>
           </div>
 

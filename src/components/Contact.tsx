@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Mail, Linkedin, MapPin, Send, Check } from "lucide-react";
+import { Mail, MapPin, Send, Check } from "lucide-react";
+import { LinkedinIcon } from "./icons/LinkedinIcon";
 import { SectionHeader } from "./About";
 
 export function Contact() {
@@ -38,7 +39,7 @@ export function Contact() {
               className="flex items-center gap-4 glass rounded-xl p-5 hover-lift"
             >
               <div className="h-11 w-11 grid place-items-center rounded-md bg-cyan/10 border border-cyan/40 text-cyan">
-                <Linkedin className="h-5 w-5" />
+                <LinkedinIcon className="h-5 w-5" />
               </div>
               <div>
                 <div className="font-mono text-[11px] uppercase tracking-widest text-cyan">
