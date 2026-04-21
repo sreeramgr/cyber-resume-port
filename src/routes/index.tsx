@@ -6,7 +6,7 @@ import { Experience } from "@/components/Experience";
 import { Skills } from "@/components/Skills";
 import { Certifications } from "@/components/Certifications";
 import { Projects } from "@/components/Projects";
-import { Resume } from "@/components/Resume";
+
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { useRevealOnScroll } from "@/hooks/use-reveal";
@@ -43,9 +43,8 @@ function Index() {
         <Experience />
         <Skills />
         <Certifications />
-        <Projects />
-        <Resume />
-        <Contact />
+          <Projects />
+          <Contact />
       </main>
       <Footer />
     </div>
