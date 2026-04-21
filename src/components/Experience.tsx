@@ -19,10 +19,9 @@ const ROLES = [
     role: "Cybersecurity Intern",
     period: "Internship",
     bullets: [
-      "Supported Qualys VMDR vulnerability assessments — onboarded assets, scheduled scans, reviewed findings.",
-      "Correlated findings across SIEM platforms to improve remediation context.",
-      "Assisted with Netskope policy configuration and exception governance.",
-      "Supported XDR-related protection rules, access controls, and domain exceptions.",
+      "Improved network and server risk visibility by supporting Qualys VMDR vulnerability assessments through asset onboarding, scan scheduling, and findings review, aligning with integrated risk management practices.",
+      "Enabled faster remediation prioritization by analyzing Qualys vulnerability trends against security frameworks and risk severity, supporting risk based remediation tracking across recurring security issues.",
+      "Strengthened web and cloud security controls by assisting with Netskope policy configuration for protection rules, access controls, and domain exceptions.",
     ],
     tags: ["Qualys VMDR", "SIEM", "Netskope", "XDR"],
   },
