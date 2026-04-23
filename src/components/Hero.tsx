@@ -107,12 +107,22 @@ export function Hero() {
             <span>region</span>
             <span className="text-foreground">DFW</span>
           </div>
-          <a
-            href="/resume.pdf"
-            className="mt-3 inline-flex items-center gap-2 font-mono text-xs text-muted-foreground hover:text-neon"
-          >
-            <Download className="h-3.5 w-3.5" /> resume.pdf · 1 page
-          </a>
+          <div className="mt-3 flex items-center gap-3">
+            <a
+              href="/resume.pdf"
+              download
+              className="group inline-flex items-center gap-2 rounded-md bg-neon px-4 py-2 font-mono text-xs uppercase tracking-wider text-primary-foreground glow-neon hover:brightness-110 transition"
+            >
+              View Resume
+              <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-1 transition-transform" />
+            </a>
+            <a
+              href="/resume.pdf"
+              className="inline-flex items-center gap-2 font-mono text-xs text-muted-foreground hover:text-neon"
+            >
+              <Download className="h-3.5 w-3.5" /> resume.pdf · 1 page
+            </a>
+          </div>
         </div>
       </div>
     </section>
