@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Mail, MapPin, Send, Check } from "lucide-react";
 import { LinkedinIcon } from "./icons/LinkedinIcon";
 import { SectionHeader } from "./About";
+import { openExternalLink } from "@/lib/openExternalLink";
 
 export function Contact() {
   const [sent, setSent] = useState(false);
@@ -33,10 +34,9 @@ export function Contact() {
               </div>
             </a>
 
-            <a
-              href={linkedinUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              type="button"
+              onClick={() => openExternalLink(linkedinUrl)}
               className="flex items-center gap-4 glass rounded-xl p-5 hover-lift"
             >
               <div className="h-11 w-11 grid place-items-center rounded-md bg-cyan/10 border border-cyan/40 text-cyan">
@@ -48,7 +48,7 @@ export function Contact() {
                 </div>
                 <div>linkedin.com/in/sreeram-gr</div>
               </div>
-            </a>
+            </button>
 
             <div className="flex items-center gap-4 glass rounded-xl p-5">
               <div className="h-11 w-11 grid place-items-center rounded-md bg-electric/10 border border-electric/40 text-electric">

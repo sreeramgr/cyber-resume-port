@@ -33,10 +33,12 @@ const sevStyles: Record<FeedItem["severity"], string> = {
 
 export function ThreatFeed() {
   const [items, setItems] = useState<FeedItem[]>(() =>
-    SEED.slice(0, 5).map((s) => ({ ...s, time: nowStamp() })),
+    SEED.slice(0, 5).map((s) => ({ ...s, time: "--:--:--" })),
   );
 
   useEffect(() => {
+    setItems(SEED.slice(0, 5).map((s) => ({ ...s, time: nowStamp() })));
+
     const id = setInterval(() => {
       setItems((prev) => {
         const next = SEED[Math.floor(Math.random() * SEED.length)];
