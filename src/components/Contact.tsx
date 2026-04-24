@@ -45,7 +45,7 @@ export function Contact() {
                 <div className="font-mono text-[11px] uppercase tracking-widest text-cyan">
                   LinkedIn
                 </div>
-                <div>linkedin.com/in/sreeram-g-ramesh</div>
+                <div>linkedin.com/in/sreeram-gr</div>
               </div>
             </a>
 
