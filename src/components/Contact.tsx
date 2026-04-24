@@ -33,7 +33,7 @@ export function Contact() {
             </a>
 
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/sreeram-gr"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-4 glass rounded-xl p-5 hover-lift"
@@ -45,7 +45,7 @@ export function Contact() {
                 <div className="font-mono text-[11px] uppercase tracking-widest text-cyan">
                   LinkedIn
                 </div>
-                <div>linkedin.com/in/sreeram-g-ramesh</div>
+                <div>linkedin.com/in/sreeram-gr</div>
               </div>
             </a>
 

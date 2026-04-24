@@ -62,7 +62,7 @@ export function Hero() {
               <Terminal className="h-4 w-4" /> Contact Me
             </a>
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/sreeram-gr"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-md border border-border px-5 py-3 font-mono text-sm uppercase tracking-wider text-muted-foreground hover:text-foreground hover:border-foreground/40 transition"
