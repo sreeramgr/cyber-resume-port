@@ -5,7 +5,7 @@ import { SectionHeader } from "./About";
 
 export function Contact() {
   const [sent, setSent] = useState(false);
-  const linkedinUrl = "https://www.linkedin.com/in/sreeram-gr";
+  const linkedinUrl = "https://www.linkedin.com/in/sreeram-gr/";
 
   return (
     <section id="contact" className="relative py-20 md:py-28">
@@ -37,10 +37,6 @@ export function Contact() {
               href={linkedinUrl}
               target="_blank"
               rel="noopener noreferrer"
-              onClick={(event) => {
-                event.preventDefault();
-                window.open(linkedinUrl, "_blank", "noopener,noreferrer");
-              }}
               className="flex items-center gap-4 glass rounded-xl p-5 hover-lift"
             >
               <div className="h-11 w-11 grid place-items-center rounded-md bg-cyan/10 border border-cyan/40 text-cyan">
