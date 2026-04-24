@@ -33,7 +33,7 @@ export function Contact() {
             </a>
 
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/sreeram-gr"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-4 glass rounded-xl p-5 hover-lift"
