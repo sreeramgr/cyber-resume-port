@@ -3,6 +3,7 @@ import { LinkedinIcon } from "./icons/LinkedinIcon";
 import { CyberCanvas } from "./CyberCanvas";
 import { RotatingText } from "./RotatingText";
 import { ThreatFeed } from "./ThreatFeed";
+import { openExternalLink } from "@/lib/openExternalLink";
 
 export function Hero() {
   const linkedinUrl = "https://www.linkedin.com/in/sreeram-gr/";
@@ -63,14 +64,13 @@ export function Hero() {
             >
               <Terminal className="h-4 w-4" /> Contact Me
             </a>
-            <a
-              href={linkedinUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              type="button"
+              onClick={() => openExternalLink(linkedinUrl)}
               className="inline-flex items-center gap-2 rounded-md border border-border px-5 py-3 font-mono text-sm uppercase tracking-wider text-muted-foreground hover:text-foreground hover:border-foreground/40 transition"
             >
               <LinkedinIcon className="h-4 w-4" /> LinkedIn
-            </a>
+            </button>
           </div>
 
           <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 font-mono text-xs text-muted-foreground">
